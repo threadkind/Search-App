@@ -13,8 +13,8 @@ body {
 
 main {
 	display: grid;
-	grid-template-columns: 5vw 1fr 1fr 1fr 1fr 1fr 5vw;
-	grid-template-rows: 5vw 1fr 1fr 1fr 1fr 5vw;
+	grid-template-columns: 3vw 1fr 1fr 1fr 1fr 1fr 3vw;
+	grid-template-rows: 8vh 1fr 1fr 1fr 1fr 4vh;
 	justify-content: center:
 	align-content: center;
 }
@@ -29,6 +29,27 @@ form {
 	grid-row: 3 / span 1;
 	grid-column: 4 / span 1;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.moveSearch {
+	width: 100vw;
+	height: 40px;
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+	opacity: 1;
+	transition: opacity 1s;
+	padding: 5px;
+	border-radius: 0;
+
+}
+
+.displayNone {
+	display: none;
+}
+
+.hide {
+	opacity: 0;
+	transition: all 0.8s;
 }
 
 input {
