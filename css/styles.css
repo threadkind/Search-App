@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background: url(https://source.unsplash.com/featured/?world) no-repeat;
+	background-size: cover;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 5vw 1fr 1fr 1fr 1fr 1fr 5vw;
+	grid-template-rows: 5vw 1fr 1fr 1fr 1fr 5vw;
+	justify-content: center:
+	align-content: center;
+}
+
+form {
+	font-size: 18px;
+	background: white;
+	padding: 20px;
+	text-align: center;
+	width: 350px;
+	border-radius: 10px;
+	grid-row: 3 / span 1;
+	grid-column: 4 / span 1;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+input {
+	font-size: 15px;
+	margin: 5px;
+	width: 250px;
+	padding: 5px;
+}
+
+.btn {
+	padding: 5px;
+	width: 71px;
+	border-radius: 10px;
+	font-weight: bolder;
+}
