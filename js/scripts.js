@@ -82,9 +82,8 @@ let searchResults = document.querySelector('.searchResults');
 			photos.innerHTML = `An error has occured.
 								${e}`;
 		});
-
 		// get NY Times data
-		fetch(`http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=f72da244c8a440b3b4cb2958e3176f2c`)
+		fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=f72da244c8a440b3b4cb2958e3176f2c`)
 		.then(response => response.json()) //parse the JSON again
 		.then(data => {
 
