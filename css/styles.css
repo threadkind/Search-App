@@ -9,14 +9,20 @@
 body {
 	background: url(https://source.unsplash.com/featured/?world) no-repeat;
 	background-size: cover;
+	background-position: center;
+	background-color: beige;
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
 main {
 	display: grid;
-	grid-template-columns: 3vw 1fr 1fr 1fr 1fr 1fr 3vw;
-	grid-template-rows: 8vh 1fr 1fr 1fr 1fr 4vh;
+	grid-template-columns: 3vw 1fr 1fr 0.5fr 0.5fr 1fr 1fr 3vw;
+	grid-template-rows: 80px 1fr;
 	justify-content: center:
 	align-content: center;
+	height: 100%;
+	width: 100%;
 }
 
 form {
@@ -27,14 +33,14 @@ form {
 	width: 350px;
 	border-radius: 10px;
 	grid-row: 3 / span 1;
-	grid-column: 4 / span 1;
+	grid-column: 2 / span 2;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 
 .moveSearch {
 	width: 100vw;
 	height: 40px;
-	grid-row: 1 / span 1;
+	grid-row: 1 / auto;
 	grid-column: 1 / span 1;
 	opacity: 1;
 	transition: opacity 1s;
@@ -65,3 +71,65 @@ input {
 	border-radius: 10px;
 	font-weight: bolder;
 }
+
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	grid-row: 2 ;
+	grid-column: 2 / span 2;
+	background: rgba(255,255,255,0.4);
+	justify-content: center;
+	width: 110%;
+}
+
+article {
+	width: 46%;
+	margin: 1%;
+	padding: 1%;
+	background: rgba(255,255,255,0.8);
+	border-radius: 10px;
+}
+
+article h2 a {
+	color: purple;
+	font-size: 3vh;
+}
+
+article p {
+	font-size: 2.5vh;
+}
+
+.photos {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+	background: rgba(255,255,255,0.4);
+	grid-row: 2 / span 1 ;
+	grid-column: 5 / span 3;
+	justify-content: center;
+
+}
+
+.image {
+	width: 30%;
+	margin: 1%;
+	background-position: center;
+	background-size: cover;
+}
+
+.photoInfo {
+	background: rgba(255,255,255,0.5);
+	color: rgba(0, 0, 0, 1);
+	padding: 1%;
+	text-align: center;
+	font-size: 12px;
+}
+
+.photoInfo a {
+	color: rgba(40,40,40,1);
+}
+
+
+
